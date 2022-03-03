@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://pyeuclid.github.io/example_plasticity/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Example - EUCLID / Plasticity</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Example";
+    var mkdocs_page_input_path = "example_plasticity.md";
+    var mkdocs_page_url = "/example_plasticity/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> EUCLID / Plasticity</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../publication/">Publication</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../code_data/">Code/Data</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../example_plasticity_w_hardening/">Example</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Code</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/def_objective_vec_HardMixVAF/">def_objective_vec_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/FEA_plate_elliptic_holes/">FEA_plate_elliptic_holes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/get_CCFD_PlaneStressHardMixVAF/">get_CCFD_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/get_df_PlaneStressHardMixVAF/">get_df_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/get_df_PlaneStressHardMixVAF_FD/">get_df_PlaneStressHardMixVAF_FD</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/get_f_PlaneStressHardMixVAF/">get_f_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/global_problem_call/">global_problem_call</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/global_problem_PlaneStressHardMixVAF/">global_problem_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/local_problem_PlaneStressHardMixVAF/">local_problem_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/local_problem_PlaneStressHardMixVAF_notan/">local_problem_PlaneStressHardMixVAF_notan</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/mesh_info/">mesh_info</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/objective_vec_HardMixVAF/">objective_vec_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/opt_HardMix/">opt_HardMix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/opt_input_HardMix/">opt_input_HardMix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/selection_HardMix/">selection_HardMix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../code/selection_threshold/">selection_threshold</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">EUCLID / Plasticity</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Example</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="example">Example</h1>
+<p>It follows a step-by-step description of the implemented algorithm for an exemplary dataset.
+In particular, EUCLID (Efficient Unsupervised Constitutive Law Identification &amp; Discovery) is applied to the displacement and net reaction force data
+that were generated based on the material model F1.
+The goal is to use the data to discover the material model, without knowing its specific mathematical form a priori.</p>
+<h2 id="data-and-parameters">Data and Parameters</h2>
+<p>The input data for EUCLID and the parameters for the optimization process are defined in <code>opt_input.m</code>.
+First, it is defined whether a <strong>Matlab executable file</strong> (.mex file) should be used to accelerate the objective function evaluation (see <a href="https://mathworks.com/help/coder/"><strong>Matlab Coder</strong></a> and <a href="https://mathworks.com/help/matlab/call-mex-file-functions.html"><strong>MEX File Functions</strong></a>)
+and over how many <strong>Matlab workers</strong> the independent optimization processes should be distributed (see <a href="https://mathworks.com/products/parallel-computing.html"><strong>Parallel Computing Toolbox</strong></a> and <a href="https://mathworks.com/help/parallel-computing/parfor.html"><strong>parfor</strong></a>).</p>
+<pre><code class="language-Matlab">in.use_mex = true;
+in.n_workers = 24;
+</code></pre>
+<p>To consider the data corresponding to material model F1, the variable <code>dataID</code> has to be set to three.</p>
+<pre><code class="language-Matlab">dataID = 3;
+</code></pre>
+<p>To also consider noise and temporal denoising, we set:</p>
+<pre><code class="language-Matlab">in.noise_level = '1';
+in.filter = 'sgolay';
+in.filter_length = 50;
+</code></pre>
+<p>According to these choices the following string is assigned to the variable <code>in.datafile</code>:</p>
+<pre><code class="language-Matlab">'20210518T174453_DATA_FYS_1_plate_elliptic_holes_noise_1_sgolay_50'
+</code></pre>
+<p>The string contains a timestamp that indicates when the data were generated and contains information about the material model, the geometry, the noise level and the smoothing method, respectively.
+To load the .mat datafile with the above name, a path has to be added by changing the variable <code>pathname</code> in <code>opt_input.m</code> accordingly.
+The .mat datafile contains a <em>struct</em> array called <code>data</code> with all information provided by the finite element simulation,
+such as for example the nodal displacements in <code>data.results.u</code> (see animation below) and net reaction forces in <code>data.results.reaction</code>.</p>
+<p><img src="/img/deformation_u_F1_noise_1_sgolay_50.gif" alt="Deformation" width="500"/></p>
+<p><sub>Animation 1: Magnitude of displacement obtained from finite element simulations. The displacement is magnified by a factor of 100.</sub></p>
+<p>In <code>opt_input.m</code> we further define parameters and hyperparameters for the optimization problem.
+All input information needed for the optimization problem are stored in a <em>struct</em> array called <code>in</code>.</p>
+<h2 id="optimization">Optimization</h2>
+<p>After defining the elementary inputs in <code>opt_input.m</code>, we start the optimization procedure by running <code>opt.m</code>.
+In <code>opt.m</code> the parameters and the data are loaded and (as mentioned above) stored in the <em>struct</em> arrays <code>in</code> and <code>data</code>, respectively.</p>
+<pre><code class="language-Matlab">in = opt_input();
+load(in.datafile,'data')
+</code></pre>
+<p><img src="/img/Fourier_flexibility.gif" alt="Yield Surface" width="400"/></p>
+<p><sub>Animation 2: Yield surface for different choices of <code>theta</code>.</sub></p>
+<p>The goal is now to find the unknown material parameters <code>theta</code>, which influence the shape of the plastic yield surface (see animation above) and consequently govern the material behavior.
+To find the material parameters, an objective <em>function_handle</em> <code>fun_vec</code> is defined. </p>
+<pre><code class="language-Matlab">fun_vec = def_objective_vec(in,data);
+</code></pre>
+<p>The <em>function_handle</em> takes the material parameters as input and returns a vector, whose sum of squared entries equals the objective function.
+Note that the <em>function_handle</em> returns a vector instead of a scalar as this is a requirement for using the Matlab build in optimizer <code>lsqnonlin</code> (see below). </p>
+<p>Taking a closer look at <code>objective_vec.m</code> provides a deeper insight in the internal processes of the objective function calculation.
+Here, nested loops over all load steps, finite elements and quadrature points are implemented for calculating the internal forces.
+To this end, the elasto-plastic return mapping algorithm, whose behavior depends on the yield function and hence the material parameters <code>theta</code>, needs to be applied (see <code>local_problem_PlaneStress_notan.m</code>).
+For decreasing the computational time needed for the cost function evalution, the function <code>objective_vec.m</code> is converted into a <strong>Matlab executable file</strong> (.mex file).</p>
+<p>After defining the objective function we apply a preconditioning optimization by minimizing the objective function with respect to the first material parameter while keeping the other parameters fixed.</p>
+<pre><code class="language-Matlab">[theta_init(1), min_cost, ~, ~, ~] = lsqnonlin(fun_vec,theta_init(1),[],[],options);
+</code></pre>
+<p>In this way, the approximate size of the yield surface is estimated.
+Based on the preconditioning solution, multiple random initial guesses are generated and the objective function is minimized for different choices of the hyperparameter <code>lambda_p</code>.
+The solutions and their corresponding objective function values are stored in a <em>struct</em> array called <code>solution</code>, which is saved as a .mat file with the name:</p>
+<pre><code class="language-Matlab">`202106T29085533_RESULTS_lsqnonlin_Pareto_random_par_FYS_1_plate_elliptic_holes_noise_1_sgolay_50`
+</code></pre>
+<h2 id="model-selection">Model Selection</h2>
+<p>As a final postprocessing step, a model with both high parsimony and low cost function value needs to be selected from the generated set of solutions.
+To this end, <code>selection.m</code> is executed.
+Here, the hyperparameters for the model selection are chosen as:</p>
+<pre><code class="language-Matlab">threshold_factor_C = 1.01;
+threshold_factor_theta = 5e-3;
+</code></pre>
+<p>As solutions were generated based on multiple initial guesses,
+we choose for every choice of <code>lambda_p</code> the initial guess that corresponds to the lowest objective function value, resulting in one solution for every choice of <code>lambda_p</code>.
+Afterwards, solutions with cost function values above a threshold are discarded as they are expected to provide low fitting accuracies.
+From the remaining solutions, the solution with the highest sparsity, i.e., with the lowest regularization term, is selected.
+Lastly, material parameters below a threshold are discarded.</p>
+<p>The final solution is: </p>
+<pre><code class="language-Matlab">&gt;&gt; selection('202106T29085533_RESULTS_lsqnonlin_Pareto_random_par_FYS_1_plate_elliptic_holes_noise_1_sgolay_50')
+Selected Solution:
+    0.2187    0.0220         0         0         0
+</code></pre>
+<p>The algorithm correctly identifies which features have to be active to describe the material behavior and at the same time correctly removes irrelevant features.
+The correct mathematical form of the material model F1 is identified,
+however, the material parameter values vary slightly compared to the true parameters as a consequence of the noise added to the displacement data.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

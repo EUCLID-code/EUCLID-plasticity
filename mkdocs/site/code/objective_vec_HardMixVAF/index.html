@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://pyeuclid.github.io/code/objective_vec_HardMixVAF/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>objective_vec_HardMixVAF - EUCLID / Plasticity</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "objective_vec_HardMixVAF";
+    var mkdocs_page_input_path = "code\\objective_vec_HardMixVAF.md";
+    var mkdocs_page_url = "/code/objective_vec_HardMixVAF/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> EUCLID / Plasticity</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../publication/">Publication</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../code_data/">Code/Data</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../example_plasticity_w_hardening/">Example</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Code</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../def_objective_vec_HardMixVAF/">def_objective_vec_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../FEA_plate_elliptic_holes/">FEA_plate_elliptic_holes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../get_CCFD_PlaneStressHardMixVAF/">get_CCFD_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../get_df_PlaneStressHardMixVAF/">get_df_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../get_df_PlaneStressHardMixVAF_FD/">get_df_PlaneStressHardMixVAF_FD</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../get_f_PlaneStressHardMixVAF/">get_f_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../global_problem_call/">global_problem_call</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../global_problem_PlaneStressHardMixVAF/">global_problem_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../local_problem_PlaneStressHardMixVAF/">local_problem_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../local_problem_PlaneStressHardMixVAF_notan/">local_problem_PlaneStressHardMixVAF_notan</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mesh_info/">mesh_info</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">objective_vec_HardMixVAF</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#input-arguments">Input Arguments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#output-arguments">Output Arguments</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../opt_HardMix/">opt_HardMix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../opt_input_HardMix/">opt_input_HardMix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../selection_HardMix/">selection_HardMix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../selection_threshold/">selection_threshold</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">EUCLID / Plasticity</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Code &raquo;</li>
+        
+      
+    
+    <li>objective_vec_HardMixVAF</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="objective_vec_hardmixvaf-calculates-the-objective-minimization-function"><code>OBJECTIVE_VEC_HARDMIXVAF</code> - calculates the objective minimization function</h1>
+<h3 id="comments">Comments</h3>
+<p>This function defines the objective function that depends on
+the given data and on theta. Note that the function
+does not return a scalar but a vector. The Matlab build-in optimizer
+(e.g., lsqnonlin) minimizes the sum of squared entries of this vector.</p>
+<p>This function may be converted into a <strong>Matlab executable file</strong> (.mex
+file) with the <a href="https://mathworks.com/help/coder/"><strong>Matlab Coder</strong></a> to
+accelerate the objective function evaluation.</p>
+<h3 id="input-arguments">Input Arguments</h3>
+<p><code>paramters</code> (<em>double</em>) - material parameters</p>
+<p><code>q_case</code> (<em>double</em>) - see <code>opt_input</code> documentation</p>
+<p><code>q</code> (<em>double</em>) - see <code>opt_input</code> documentation</p>
+<p><code>lambda_r</code> (<em>double</em>) - see <code>opt_input</code> documentation</p>
+<p><code>lambda_p</code> (<em>double</em>) - see <code>opt_input</code> documentation</p>
+<p><code>p</code> (<em>double</em>) - see <code>opt_input</code> documentation</p>
+<p><code>n_eval</code> (<em>double</em>) - see <code>opt_input</code> documentation</p>
+<p><code>u</code> (<em>double</em>) - displacement data for every load step (every column
+corresponds to one load step)</p>
+<p><code>reaction</code> (<em>double</em>) - reaction force data for every load step</p>
+<p><code>n_NR_local</code> (<em>double</em>) - maximum number of Newton-Raphson iterations
+used for solving the local problem (return mapping algorithm)</p>
+<p><code>tol_NR_local</code> (<em>double</em>) - stopping tolerance for the Newton-Raphson
+iteration used for solving the local problem (return mapping algorithm)</p>
+<p><code>CPlaneStress</code> (<em>double</em>) - known elastic properties (stiffness matrix)</p>
+<p><code>SPlaneStress</code> (<em>double</em>) - known elastic properties (compliance matrix)</p>
+<p><code>n_dof</code> (<em>double</em>) - number of degrees of freedom in the mesh</p>
+<p><code>n_element</code> (<em>double</em>) - number of finite elements in the mesh</p>
+<p><code>n_dof_per_element</code> (<em>double</em>) - number of degrees of freedom per finite
+element</p>
+<p><code>element_dof</code> (<em>double</em>) - degrees of freedom at each finite element
+element (each row provides all degrees of freedom at the corresponding
+finite element)</p>
+<p><code>Gauss_weights</code> (<em>double</em>) - Gaussian quadrature weights</p>
+<p><code>n_Gauss_per_dim</code> (<em>double</em>) - number of Gauss points per dimension</p>
+<p><code>detJ_GP</code> (<em>double</em>) - determinant of the Jacobian at each Gauss point
+needed for mapping integrals between the reference and physical finite
+element</p>
+<p><code>B_GP</code> (<em>double</em>) - help matrix at each Gauss point needed for
+calculating shape function derivatives</p>
+<p><code>dof_free</code> (<em>double</em>) - free degrees of freedom</p>
+<p><code>dof_reaction</code> (<em>double</em>) - degrees of freedom corresponding to reaction
+forces</p>
+<h3 id="output-arguments">Output Arguments</h3>
+<p><code>cost</code> (<em>double</em>) - vector, whose sum of squared entries must be
+minimized (note that the regularization term is included as the last
+entry of this vector)</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../opt_HardMix/" class="btn btn-neutral float-right" title="opt_HardMix">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../mesh_info/" class="btn btn-neutral" title="mesh_info"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mesh_info/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../opt_HardMix/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

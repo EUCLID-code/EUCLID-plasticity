@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://pyeuclid.github.io/code/opt_input_HardMix/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>opt_input_HardMix - EUCLID / Plasticity</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "opt_input_HardMix";
+    var mkdocs_page_input_path = "code\\opt_input_HardMix.md";
+    var mkdocs_page_url = "/code/opt_input_HardMix/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> EUCLID / Plasticity</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../publication/">Publication</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../code_data/">Code/Data</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../example_plasticity_w_hardening/">Example</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Code</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../def_objective_vec_HardMixVAF/">def_objective_vec_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../FEA_plate_elliptic_holes/">FEA_plate_elliptic_holes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../get_CCFD_PlaneStressHardMixVAF/">get_CCFD_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../get_df_PlaneStressHardMixVAF/">get_df_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../get_df_PlaneStressHardMixVAF_FD/">get_df_PlaneStressHardMixVAF_FD</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../get_f_PlaneStressHardMixVAF/">get_f_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../global_problem_call/">global_problem_call</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../global_problem_PlaneStressHardMixVAF/">global_problem_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../local_problem_PlaneStressHardMixVAF/">local_problem_PlaneStressHardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../local_problem_PlaneStressHardMixVAF_notan/">local_problem_PlaneStressHardMixVAF_notan</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../mesh_info/">mesh_info</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../objective_vec_HardMixVAF/">objective_vec_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../opt_HardMix/">opt_HardMix</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">opt_input_HardMix</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#input-arguments">Input Arguments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#output-arguments">Output Arguments</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../selection_HardMix/">selection_HardMix</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../selection_threshold/">selection_threshold</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">EUCLID / Plasticity</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Code &raquo;</li>
+        
+      
+    
+    <li>opt_input_HardMix</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="opt_input_hardmix-provides-elementary-definitions-needed-for-the-optimization-problem"><code>OPT_INPUT_HARDMIX</code> - provides elementary definitions needed for the optimization problem</h1>
+<h3 id="comments">Comments</h3>
+<p>Please make sure that the correct path to the FEM data is specified.</p>
+<h3 id="input-arguments">Input Arguments</h3>
+<p><em>none</em></p>
+<h3 id="output-arguments">Output Arguments</h3>
+<p><code>in</code> (<em>struct</em>) - contains information needed for the optimization
+problem</p>
+<p><code>in.use_mex</code> (<em>logical</em>) - specifies if .mex file is used for the cost
+evaluation</p>
+<p><code>in.n_workers</code> (<em>double</em>) - number of workers used for the parallel
+optimization</p>
+<p><code>in.datafile</code> (<em>char</em>) - filename of the FEM dataset</p>
+<p><code>in.noise_level</code> (<em>char</em>) - noise level to be considered (e.g., <code>in.noise_level=''</code>, <code>in.noise_level='1'</code>,
+<code>in.noise_level='3'</code>, <code>in.noise_level='5'</code>)</p>
+<p><code>in.filter</code> (<em>char</em>) - temporal data smoothing method (e.g., <code>in.filter=''</code> for no
+smoothing, <code>in.filter='sgolay'</code> for Savitzky-Golay smoothing)</p>
+<p><code>in.filter_length</code> (<em>double</em>) - specifies the moving window length for
+the temporal smoothing</p>
+<p><code>in.n_feature</code> (<em>double</em>) - number of features</p>
+<p><code>in.q_case</code> (<em>double</em>) - specifies which norm to use during cost function
+calculation (e.g. <code>in.q_case=0</code> for L2-norm)</p>
+<p><code>in.q</code> (<em>double</em>) - specifies which norm to use during cost function
+calculation (e.g. <code>in.q=2</code> for L2-norm)</p>
+<p><code>in.lambda_r</code> (<em>double</em>) - weighting factor for net reaction force
+contributions</p>
+<p><code>in.lambda_p</code> (<em>double</em>) - weighting factor for the sparsity promoting
+regularization term</p>
+<p><code>in.p</code> (<em>double</em>) - specifies which norm to use for the sparsity
+promoting regularization</p>
+<p><code>in.lambda_p_factor</code> (<em>double</em>) - lambda_p is multiplied by this factor
+to obtain solutions for different lambda_p</p>
+<p><code>in.n_lambda_p</code> (<em>double</em>) - number of different values of lambda_p to be
+considered</p>
+<p><code>in.n_eval</code> (<em>double</em>) - evaluate cost for every n_eval-th load step</p>
+<p><code>in.method</code> (<em>char</em>) - method used for optimization</p>
+<p><code>in.MaxFunEvals</code> (<em>double</em>) - maximum minimization function evaluations
+during each optimization process</p>
+<p><code>in.TolFun</code> (<em>double</em>) - stopping criterion for optimization process
+based on minimization function value</p>
+<p><code>in.TolX</code> (<em>double</em>) - stopping criterion for optimization process based
+on solution values</p>
+<p><code>in.MaxTime</code> (<em>double</em>) - maximimum runtime of an optimization process</p>
+<p><code>in.theta_init</code> (<em>double</em>) - initial guess yield surface parameters</p>
+<p><code>in.H_isotropic_init</code> (<em>double</em>) - initial guess hardening parameters</p>
+<p><code>in.H_kinematic_init</code> (<em>double</em>) - initial guess hardening parameters</p>
+<p><code>in.n_guess</code> (<em>double</em>) - number of random initial guesses</p>
+<p><code>in.perturbation_guess_theta</code> (<em>double</em>) - specifies the magnitude of
+perturbation applied to the preconditioning solution for generating
+random initial guesses</p>
+<p><code>in.perturbation_guess_H_isotropic</code> (<em>double</em>) - specifies the magnitude
+of perturbation applied to the preconditioning solution for generating
+random initial guesses</p>
+<p><code>in.perturbation_guess_H_kinematic</code> (<em>double</em>) - specifies the magnitude
+of perturbation applied to the preconditioning solution for generating
+random initial guesses</p>
+<p><code>in.save_path</code> (<em>char</em>) - path for saving results</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../selection_best_random_HardMixVAF/" class="btn btn-neutral float-right" title="selection_best_random_HardMixVAF">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../opt_HardMix/" class="btn btn-neutral" title="opt_HardMix"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../opt_HardMix/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../selection_best_random_HardMixVAF/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
