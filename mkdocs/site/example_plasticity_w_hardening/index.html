@@ -183,7 +183,7 @@ in.filter_length = 50;
 To load the .mat datafile with the above name, a path has to be added by changing the variable <code>pathname</code> in <code>opt_input_HardMix.m</code> accordingly.
 The .mat datafile contains a <em>struct</em> array called <code>data</code> with all information provided by the finite element simulation,
 such as for example the nodal displacements in <code>data.results.u</code> (see animation below) and net reaction forces in <code>data.results.reaction</code>.</p>
-<p><img src="/img/deformation_u_F1_noise_1_sgolay_50.gif" alt="Deformation" width="500"/></p>
+<p><img src="../img/deformation_u_F1_noise_1_sgolay_50.gif" alt="Deformation" width="500"/></p>
 <p><sub>Animation 1: Magnitude of displacement obtained from finite element simulations. The displacement is magnified by a factor of 100. Note that this is an examplary animation, it does not correspond to the data considered in the example.</sub></p>
 <p>In <code>opt_input_HardMix.m</code>, we further define parameters and hyperparameters for the optimization problem.
 All input information needed for the optimization problem are stored in a <em>struct</em> array called <code>in</code>.</p>
@@ -193,7 +193,7 @@ In <code>opt_HardMix.m</code> the parameters and the data are loaded and (as men
 <pre><code class="language-Matlab">in = opt_input_HardMix();
 load(in.datafile,'data')
 </code></pre>
-<p><img src="/img/Fourier_flexibility.gif" alt="Yield Surface" width="400"/></p>
+<p><img src="../img/Fourier_flexibility.gif" alt="Yield Surface" width="400"/></p>
 <p><sub>Animation 2: Yield surface for different choices of <code>theta</code>.</sub></p>
 <p>The goal is now to find the unknown material parameters <code>theta</code> and hardening parameters <code>H_isotropic</code>, <code>H_kinematic</code>, which influence the shape of the plastic yield surface (see animation above) and the hardening behavior, respectively.
 To find the material parameters, an objective <em>function_handle</em> <code>fun_vec</code> is defined. </p>

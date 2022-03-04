@@ -37,7 +37,7 @@ To load the .mat datafile with the above name, a path has to be added by changin
 The .mat datafile contains a _struct_ array called `data` with all information provided by the finite element simulation,
 such as for example the nodal displacements in `data.results.u` (see animation below) and net reaction forces in `data.results.reaction`.
 
-<img src="/img/deformation_u_F1_noise_1_sgolay_50.gif" alt="Deformation" width="500"/>
+<img src="../img/deformation_u_F1_noise_1_sgolay_50.gif" alt="Deformation" width="500"/>
 
 <sub>Animation 1: Magnitude of displacement obtained from finite element simulations. The displacement is magnified by a factor of 100. Note that this is an examplary animation, it does not correspond to the data considered in the example.</sub>
 
@@ -52,7 +52,7 @@ in = opt_input_HardMix();
 load(in.datafile,'data')
 ```
 
-<img src="/img/Fourier_flexibility.gif" alt="Yield Surface" width="400"/>
+<img src="../img/Fourier_flexibility.gif" alt="Yield Surface" width="400"/>
 
 <sub>Animation 2: Yield surface for different choices of `theta`.</sub>
 
