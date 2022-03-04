@@ -13,7 +13,7 @@ the cost function is minimized jointly with a sparsity promoting regularization 
 which a solution with low cost and high parsimony is automatically selected.
 
 # About the documentation
-The <a href="https://EUCLID-code.github.io/plasticity/mkdocs/site" target="_blank">documentation</a> contains detailed information for the most important functions (subroutines).
+The <a href="https://EUCLID-code.github.io/EUCLID-plasticity/mkdocs/site" target="_blank">documentation</a> contains detailed information for the most important functions (subroutines).
 For each function, the _input arguments_ and _output arguments_ are provided.
 The documentation can be browsed by using the search box.
 The provided _example_ helps to understand the workflow of EUCLID, it can be executed using the code and data provided on <a href="https://github.com/EUCLID-code/plasticity" target="_blank">GitHub</a>.
