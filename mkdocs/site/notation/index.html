@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="canonical" href="https://pyeuclid.github.io/contact/">
+  <link rel="canonical" href="https://pyeuclid.github.io/notation/">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Contact - EUCLID / Plasticity</title>
+  <title>Notation - EUCLID / Plasticity</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Contact";
-    var mkdocs_page_input_path = "contact.md";
-    var mkdocs_page_url = "/contact/";
+    var mkdocs_page_name = "Notation";
+    var mkdocs_page_input_path = "notation.md";
+    var mkdocs_page_url = "/notation/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -62,21 +62,19 @@
                     <li class="toctree-l1"><a class="reference internal" href="../example_plasticity_w_hardening/">Example</a>
                     </li>
                 </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Contact</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#moritz-flaschel">Moritz Flaschel</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#siddhant-kumar">Siddhant Kumar</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#laura-de-lorenzis">Laura De Lorenzis</a>
-    </li>
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Code</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../notation/">Notation</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Notation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#abbreviations">Abbreviations</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#variables">Variables</a>
+    </li>
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../code/def_objective_vec_HardMixVAF/">def_objective_vec_HardMixVAF</a>
                     </li>
@@ -135,8 +133,12 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
+        
+          <li>Code &raquo;</li>
+        
+      
     
-    <li>Contact</li>
+    <li>Notation</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -148,31 +150,149 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="contact">Contact</h1>
-<h2 id="moritz-flaschel">Moritz Flaschel</h2>
-<p><img alt="" src="../img/mflaschel.jpg" /></p>
-<ul>
-<li>E-Mail: mflaschel@ethz.ch</li>
-<li>Web: <a href="https://compmech.ethz.ch/the-group/person-detail.flaschel.html">compmech.ethz.ch</a></li>
-</ul>
-<h2 id="siddhant-kumar">Siddhant Kumar</h2>
-<p><img alt="" src="../img/skumar.jpg" /></p>
-<ul>
-<li>E-Mail: sid.kumar@tudelft.nl</li>
-<li>Web: <a href="https://www.mech-mat.com/">mech-mat.com</a></li>
-</ul>
-<h2 id="laura-de-lorenzis">Laura De Lorenzis</h2>
-<p><img alt="" src="../img/ldelorenzis.jpg" /></p>
-<ul>
-<li>E-Mail: ldelorenzis@ethz.ch</li>
-<li>Web: <a href="https://compmech.ethz.ch/the-group/people/principal-investigator.html">compmech.ethz.ch</a></li>
-</ul>
-<!---
-Moritz Flaschel | Siddhant Kumar | Laura De Lorenzis
-:---: | :---: | :---:
-![](/img/mflaschel.jpg) | ![](/img/skumar.jpg) | ![](/img/ldelorenzis.jpg)
-E-Mail: mflaschel@ethz.ch | E-Mail: sid.kumar@tudelft.nl | E-Mail: ldelorenzis@ethz.ch
--->
+                <h1 id="notation">Notation</h1>
+<h2 id="abbreviations">Abbreviations</h2>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bc</td>
+<td>boundary condition</td>
+</tr>
+<tr>
+<td>dof</td>
+<td>degree of freedom</td>
+</tr>
+<tr>
+<td>FD</td>
+<td>finite differences</td>
+</tr>
+<tr>
+<td>FEA</td>
+<td>finite element analysis</td>
+</tr>
+<tr>
+<td>FEM</td>
+<td>finite element method</td>
+</tr>
+<tr>
+<td>FYS</td>
+<td>Fourier expansion based yield surface</td>
+</tr>
+<tr>
+<td>GP</td>
+<td>Gauss point</td>
+</tr>
+<tr>
+<td>HardIsoLin</td>
+<td>linear isotropic hardening</td>
+</tr>
+<tr>
+<td>HardIsoNonlin</td>
+<td>nonlinear isotropic hardening</td>
+</tr>
+<tr>
+<td>HardKinLin</td>
+<td>linear kinematic hardening</td>
+</tr>
+<tr>
+<td>HardMix</td>
+<td>mixed isotropic and kinematic hardening</td>
+</tr>
+<tr>
+<td>notan</td>
+<td>no elasto-plastic consistent tangent modulus computation</td>
+</tr>
+<tr>
+<td>NR</td>
+<td>Newton-Raphson</td>
+</tr>
+<tr>
+<td>mex</td>
+<td>MATLAB executable</td>
+</tr>
+<tr>
+<td>opt</td>
+<td>optimization (inverse problem)</td>
+</tr>
+<tr>
+<td>UT</td>
+<td>uniaxial tension</td>
+</tr>
+<tr>
+<td>UTC</td>
+<td>uniaxial tension followed by uniaxial compression</td>
+</tr>
+<tr>
+<td>VAF</td>
+<td>Voce and Armstrong-Frederick hardening</td>
+</tr>
+</tbody>
+</table>
+<h2 id="variables">Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>stiffness matrix</td>
+</tr>
+<tr>
+<td>CPlaneStress</td>
+<td>stiffness matrix under plane stress</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>elasto-plastic consistent tangent modulus</td>
+</tr>
+<tr>
+<td>epsilonV</td>
+<td>strain in Voigt notation</td>
+</tr>
+<tr>
+<td>epsilonVp</td>
+<td>plastic strain in Voigt notation</td>
+</tr>
+<tr>
+<td>epsilonVp_prev</td>
+<td>plastic strain at previous time/load step in Voigt notation</td>
+</tr>
+<tr>
+<td>fun</td>
+<td>objective function</td>
+</tr>
+<tr>
+<td>fun_vec</td>
+<td>objective function components gathered in a vector</td>
+</tr>
+<tr>
+<td>in</td>
+<td>input parameters</td>
+</tr>
+<tr>
+<td>S</td>
+<td>compliance matrix</td>
+</tr>
+<tr>
+<td>SPlaneStress</td>
+<td>compliance matrix under plane stress</td>
+</tr>
+<tr>
+<td>sigmaV</td>
+<td>stress in Voigt notation</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
@@ -180,10 +300,10 @@ E-Mail: mflaschel@ethz.ch | E-Mail: sid.kumar@tudelft.nl | E-Mail: ldelorenzis@e
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../notation/" class="btn btn-neutral float-right" title="Notation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../code/def_objective_vec_HardMixVAF/" class="btn btn-neutral float-right" title="def_objective_vec_HardMixVAF">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../example_plasticity_w_hardening/" class="btn btn-neutral" title="Example"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../contact/" class="btn btn-neutral" title="Contact"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -209,10 +329,10 @@ E-Mail: mflaschel@ethz.ch | E-Mail: sid.kumar@tudelft.nl | E-Mail: ldelorenzis@e
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../example_plasticity_w_hardening/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../contact/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../notation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../code/def_objective_vec_HardMixVAF/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

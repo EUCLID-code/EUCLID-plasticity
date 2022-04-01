@@ -7,6 +7,7 @@ nav:
     - Example: example_plasticity_w_hardening.md
     - Contact: contact.md
     - Code:
+        - Notation: notation.md
         - def_objective_vec_HardMixVAF: code/def_objective_vec_HardMixVAF.md
         - FEA_plate_elliptic_holes: code/FEA_plate_elliptic_holes.md
         - get_CCFD_PlaneStressHardMixVAF: code/get_CCFD_PlaneStressHardMixVAF.md
