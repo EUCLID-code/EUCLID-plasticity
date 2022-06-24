@@ -11,7 +11,7 @@ function [f, df_dsigmaV, d2f_d2sigmaV] = get_df_PlaneStress_Tresca(sigma_0,sigma
 % `theta` (_double_) - material parameters
 % 
 % `sigmaV` (_double_) - Cauchy stress under plane stress conditions in
-% Voigt notation (sigma_11, sigma_22, sigma_22)
+% Voigt notation (sigma_11, sigma_22, sigma_12)
 % 
 % `FD` (_double_) - finite differences stepsize
 %

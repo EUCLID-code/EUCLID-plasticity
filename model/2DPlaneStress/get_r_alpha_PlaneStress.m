@@ -8,7 +8,7 @@ function [r, alpha] = get_r_alpha_PlaneStress(sigmaV)
 % ## Input Arguments
 % 
 % `sigmaV` (_double_) - Cauchy stress under plane stress conditions in
-% Voigt notation (sigma_11, sigma_22, sigma_22)
+% Voigt notation (sigma_11, sigma_22, sigma_12)
 % 
 % ## Output Arguments
 % 

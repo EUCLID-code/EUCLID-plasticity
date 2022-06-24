@@ -10,7 +10,7 @@ function f = get_f_PlaneStress(theta,sigmaV)
 % `theta` (_double_) - material parameters
 % 
 % `sigmaV` (_double_) - Cauchy stress under plane stress conditions in
-% Voigt notation (sigma_11, sigma_22, sigma_22)
+% Voigt notation (sigma_11, sigma_22, sigma_12)
 % 
 % ## Output Arguments
 % 

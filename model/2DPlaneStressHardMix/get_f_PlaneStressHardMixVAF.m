@@ -13,7 +13,7 @@ function f = get_f_PlaneStressHardMixVAF(theta,H_isotropic,sigmaV,gamma,sigmaV_b
 % `H_isotropic` (_double_) - isotropic hardening parameters
 % 
 % `sigmaV` (_double_) - Cauchy stress under plane stress conditions in
-% Voigt notation (sigma_11, sigma_22, sigma_22)
+% Voigt notation (sigma_11, sigma_22, sigma_12)
 % 
 % `gamma` (_double_) - plastic multiplier
 %

@@ -1,150 +1,131 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="canonical" href="https://euclid-code.github.io/notation/">
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Notation - EUCLID / Plasticity</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
-
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Notation";
-    var mkdocs_page_input_path = "notation.md";
-    var mkdocs_page_url = "/notation/";
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://euclid-code.github.io/notation/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Notation - EUCLID / Plasticity</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Notation";
+        var mkdocs_page_input_path = "notation.md";
+        var mkdocs_page_url = "/notation/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> EUCLID / Plasticity</a>
-        <div role="search">
+          <a href=".." class="icon icon-home"> EUCLID / Plasticity
+        </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../publication/">Publication</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../code_data/">Code/Data</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../example_plasticity_w_hardening/">Example</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Code</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Notation</a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../publication/">Publication</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../code_data/">Code/Data</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../example_plasticity_w_hardening/">Example</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Code</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Notation</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#abbreviations">Abbreviations</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#variables">Variables</a>
     </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/def_objective_vec_HardMixVAF/">def_objective_vec_HardMixVAF</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/FEA_plate_elliptic_holes/">FEA_plate_elliptic_holes</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/get_CCFD_PlaneStressHardMixVAF/">get_CCFD_PlaneStressHardMixVAF</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/get_df_PlaneStressHardMixVAF/">get_df_PlaneStressHardMixVAF</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/get_df_PlaneStressHardMixVAF_FD/">get_df_PlaneStressHardMixVAF_FD</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/get_f_PlaneStressHardMixVAF/">get_f_PlaneStressHardMixVAF</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/global_problem_call/">global_problem_call</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/global_problem_PlaneStressHardMixVAF/">global_problem_PlaneStressHardMixVAF</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/local_problem_PlaneStressHardMixVAF/">local_problem_PlaneStressHardMixVAF</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/local_problem_PlaneStressHardMixVAF_notan/">local_problem_PlaneStressHardMixVAF_notan</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/mesh_info/">mesh_info</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/objective_vec_HardMixVAF/">objective_vec_HardMixVAF</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/opt_HardMix/">opt_HardMix</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/opt_input_HardMix/">opt_input_HardMix</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/selection_HardMix/">selection_HardMix</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../code/selection_threshold/">selection_threshold</a>
-                    </li>
-                </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/def_objective_vec_HardMixVAF/">def_objective_vec_HardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/FEA_plate_elliptic_holes/">FEA_plate_elliptic_holes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/get_CCFD_PlaneStressHardMixVAF/">get_CCFD_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/get_df_PlaneStressHardMixVAF/">get_df_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/get_df_PlaneStressHardMixVAF_FD/">get_df_PlaneStressHardMixVAF_FD</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/get_f_PlaneStressHardMixVAF/">get_f_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/global_problem_call/">global_problem_call</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/global_problem_PlaneStressHardMixVAF/">global_problem_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/local_problem_PlaneStressHardMixVAF/">local_problem_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/local_problem_PlaneStressHardMixVAF_notan/">local_problem_PlaneStressHardMixVAF_notan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/mesh_info/">mesh_info</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/objective_vec_HardMixVAF/">objective_vec_HardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/opt_HardMix/">opt_HardMix</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/opt_input_HardMix/">opt_input_HardMix</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/selection_HardMix/">selection_HardMix</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/selection_threshold/">selection_threshold</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">EUCLID / Plasticity</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">EUCLID / Plasticity</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Code &raquo;</li>
-        
-      
-    
-    <li>Notation</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Code &raquo;</li><li>Notation</li>
     <li class="wy-breadcrumbs-aside">
-      
     </li>
   </ul>
-  
   <hr/>
 </div>
 
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h1 id="notation">Notation</h1>
 <h2 id="abbreviations">Abbreviations</h2>
@@ -291,29 +272,21 @@
 </table>
               
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../example_plasticity_w_hardening/" class="btn btn-neutral float-left" title="Example"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../code/def_objective_vec_HardMixVAF/" class="btn btn-neutral float-right" title="def_objective_vec_HardMixVAF">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../example_plasticity_w_hardening/" class="btn btn-neutral" title="Example"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -321,7 +294,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     

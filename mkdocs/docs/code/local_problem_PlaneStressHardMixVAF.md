@@ -35,7 +35,7 @@ epsilon_p_22, 2*epsilon_p_12, epsilon_p_33)
 
 ###  Output Arguments
 `sigmaV` (_double_) - Cauchy stress at the current load step in Voigt
-notation (sigma_11, sigma_22, sigma_22)
+notation (sigma_11, sigma_22, sigma_12)
 
 `CC` (_double_) - consistent tangent modulus
 

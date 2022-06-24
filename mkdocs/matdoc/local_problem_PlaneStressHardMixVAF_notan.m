@@ -41,7 +41,7 @@ function [sigmaV,epsilonVp,gamma,sigmaV_back,converged_local] = local_problem_Pl
 % ## Output Arguments
 % 
 % `sigmaV` (_double_) - Cauchy stress at the current load step in Voigt
-% notation (sigma_11, sigma_22, sigma_22)
+% notation (sigma_11, sigma_22, sigma_12)
 % 
 % `epsilonVp` (_double_) - plastic component of the infinitesimal
 % strain at the current load step in Voigt notation (epsilon_p_11,
