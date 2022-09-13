@@ -43,7 +43,7 @@ displacement = zeros(1,size(displacement_increment,2));
 n_reaction = size(dof_reaction,1);
 n_load_case = length(max_displacement);
 
-%% Hystory Variables
+%% History Variables
 epsilonVp_GP_prev = zeros(n_element,n_Gauss_per_dim,n_Gauss_per_dim,4);
 epsilonVp_GP = zeros(n_element,n_Gauss_per_dim,n_Gauss_per_dim,4);
 

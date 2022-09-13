@@ -108,7 +108,7 @@ if theta(1) <= sum(abs(theta(2:end)))
     return
 end
 
-%% Hystory Variables
+%% History Variables
 epsilonVp_GP_prev = zeros(n_element,n_Gauss_per_dim,n_Gauss_per_dim,4);
 epsilonVp_GP = zeros(n_element,n_Gauss_per_dim,n_Gauss_per_dim,4);
 gamma_GP_prev = zeros(n_element,n_Gauss_per_dim,n_Gauss_per_dim);
