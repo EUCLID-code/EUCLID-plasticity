@@ -2,7 +2,7 @@ EUCLID (Efficient Unsupervised Constitutive Law Identification & Discovery) is h
 
 # Elastoplasticity
 
-![Schematic of EUCLID for discovering elasto-plasticity](./img/schematics-plasticity.png)
+![Schematic of EUCLID for discovering elasto-plasticity](/img/schematics-plasticity.png)
 
 In a single experiment with complex geometry (a), point-wise displacements
 (b) and global reaction forces (i) are measured. A quadrilateral finite element mesh is constructed (c) to interpolate the
@@ -16,7 +16,7 @@ which a solution with low cost and high parsimony is automatically selected.
 
 # Generalized standard materials
 
-![Schematic of EUCLID for discovering generalized standard materials](./img/schematics-GSM.png)
+![Schematic of EUCLID for discovering generalized standard materials](/img/schematics-GSM.png)
 
 From a mechanical test on a specimen with complex shape (a), the strain field over the specimen surface is acquired using digital image correlation (DIC) (b)
 , and the reaction force at the boundary is measured using a load cell.
