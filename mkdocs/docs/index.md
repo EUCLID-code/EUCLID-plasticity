@@ -28,5 +28,4 @@ the thermodynamic potentials (f) are discovered as parsimonious mathematical for
 The <a href="https://EUCLID-code.github.io/EUCLID-plasticity/mkdocs/site" target="_blank">documentation</a> contains detailed information for the most important functions (subroutines).
 For each function, the _input arguments_ and _output arguments_ are provided.
 The documentation can be browsed by using the search box.
-The provided _examples_ help to understand the workflow of EUCLID, they can be executed using the code and data provided on <a href="https://github.com/EUCLID-code/plasticity" target="_blank">GitHub</a>.
-The data used in the [publications](https://EUCLID-code.github.io/EUCLID-plasticity/mkdocs/site/publication/) can be downloaded from the <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/534002" target="_blank">ETH Research Collection</a>.
+The provided _examples_ help to understand the workflow of EUCLID, they can be executed using the provided <a href="https://euclid-code.github.io/EUCLID-plasticity/mkdocs/site/code_data/" target="_blank">codes and data</a>.
