@@ -90,6 +90,7 @@ function in = opt_input_HardMix()
 % random initial guesses
 % 
 % `in.save_path` (_char_) - path for saving results
+%
 
 in.use_mex = false;
 in.n_workers = 1;

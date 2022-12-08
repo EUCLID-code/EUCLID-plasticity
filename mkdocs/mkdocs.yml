@@ -9,6 +9,7 @@ nav:
     - Code:
         - Notation: notation.md
         - def_objective_vec_HardMixVAF: code/def_objective_vec_HardMixVAF.md
+        - def_objective_vec_VEVP: code/def_objective_vec_VEVP.md
         - engineering2ordinary_strainV: code/engineering2ordinary_strainV.md
         - FEA_plate_elliptic_holes: code/FEA_plate_elliptic_holes.md
         - FEA_rate_dependent_plate_elliptic_holes: code/FEA_rate_dependent_plate_elliptic_holes.md
@@ -28,12 +29,16 @@ nav:
         - local_problem_VEVPHardMixLin_notan: code/local_problem_VEVPHardMixLin_notan.md
         - mesh_info: code/mesh_info.md
         - objective_vec_HardMixVAF: code/objective_vec_HardMixVAF.md
+        - objective_vec_VEVPHardMixLin_v2: code/objective_vec_VEVPHardMixLin_v2.md
         - opt_HardMix: code/opt_HardMix.md
+        - opt_RateDependent: code/opt_RateDependent.md
         - opt_input_HardMix: code/opt_input_HardMix.md
+        - opt_input_RateDependent: code/opt_input_RateDependent.md
         - ordinary2engineering_strainV: code/ordinary2engineering_strainV.md
-        - selection_best_random_HardMixVAF: code/selection_best_random_HardMixVAF.md
+        - selection_automatic: code/selection_automatic.md
         - selection_best_random_HardMixVAF: code/selection_best_random_HardMixVAF.md
         - selection_HardMix: code/selection_HardMix.md
+        - selection_RateDependent: code/selection_RateDependent.md
         - selection_threshold: code/selection_threshold.md
         - V2dev: code/V2dev.md
         - V2eq: code/V2eq.md

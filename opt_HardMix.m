@@ -14,8 +14,10 @@ function opt_HardMix()
 % ## Output Arguments
 %
 % _none_
+% 
 
-in = opt_input_HardMix(); % load input paramaters / hyperparamters / settings etc.
+addpath(genpath(pwd));
+in = opt_input_HardMix(); % load input parameters / hyperparameters / settings etc.
 
 %% Load Data
 load(in.datafile,'data')

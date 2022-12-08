@@ -13,11 +13,11 @@ function selection_HardMix(solutionfile)
 % ## Output Arguments
 % 
 % _none_
+%
 
 addpath(genpath(pwd));
 if nargin < 1
-%     solutionfile = '202112T01220654_RESULTS_lsqnonlin_lb_parsplit_HardMixVAF_FYS_vonMises_HardMix_plate_elliptic_holes';
-    solutionfile = '202112T02093144_RESULTS_lsqnonlin_lb_parsplit_HardMixVAF_FYS_nonconvex_HardMix_plate_elliptic_holes_noise_5_sgolay_50';
+    solutionfile = '202112T01220654_RESULTS_lsqnonlin_lb_parsplit_HardMixVAF_FYS_vonMises_HardMix_plate_elliptic_holes';
 end
 
 %% Load Solution
