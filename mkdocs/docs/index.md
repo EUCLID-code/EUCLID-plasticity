@@ -1,6 +1,8 @@
-EUCLID (Efficient Unsupervised Constitutive Law Identification & Discovery) is here applied to discover plastic yield functions of different materials.
+EUCLID (Efficient Unsupervised Constitutive Law Identification & Discovery) is here applied to discover path-dependent material behavior, i.e., elastoplastic material models and generalized standard material models.
 
-![Schematic of EUCLID](./img/schematics-plasticity.png)
+# Elastoplasticity
+
+![Schematic of EUCLID for discovering elasto-plasticity](./img/schematics-plasticity.png)
 
 In a single experiment with complex geometry (a), point-wise displacements
 (b) and global reaction forces (i) are measured. A quadrilateral finite element mesh is constructed (c) to interpolate the
@@ -11,6 +13,16 @@ in the data set, while the history variables are updated at each step (g). Based
 works and hence the internal (h) and external (i) force imbalances are calculated, contributing to the cost function. Finally,
 the cost function is minimized jointly with a sparsity promoting regularization term (j) to generate a set of solutions out of
 which a solution with low cost and high parsimony is automatically selected.
+
+# Generalized standard materials
+
+![Schematic of EUCLID for discovering generalized standard materials](./img/schematics-GSM.png)
+
+From a mechanical test on a specimen with complex shape (a), the strain field over the specimen surface is acquired using digital image correlation (DIC) (b)
+, and the reaction force at the boundary is measured using a load cell.
+Introducing a model library, the residuals of the weak form of linear momentum balance in the interior (c) and at the boundary (d) can be expressed as functions of the material parameters `theta`.
+By minimizing the sum of squared residuals of the linear momentum balance along with a sparsity promoting regularization term (e),
+the thermodynamic potentials (f) are discovered as parsimonious mathematical formulae.
 
 # About the documentation
 The <a href="https://EUCLID-code.github.io/EUCLID-plasticity/mkdocs/site" target="_blank">documentation</a> contains detailed information for the most important functions (subroutines).

@@ -1,5 +1,5 @@
 function FEA_plate_elliptic_holes()
-% FEA_plate_elliptic_holes executes finite element analysis
+% FEA_plate_elliptic_holes executes a finite element analysis
 %
 % ## Comments
 % 

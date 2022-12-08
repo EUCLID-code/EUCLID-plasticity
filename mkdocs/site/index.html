@@ -47,7 +47,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="publication/">Publication</a>
+                <li class="toctree-l1"><a class="reference internal" href="publication/">Publications</a>
                 </li>
               </ul>
               <ul>
@@ -55,7 +55,11 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="example_plasticity_w_hardening/">Example</a>
+                <li class="toctree-l1"><a class="reference internal" href="example_plasticity_w_hardening/">Example 1</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="example_GSM/">Example 2</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Code</span></p>
@@ -64,9 +68,15 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/def_objective_vec_HardMixVAF/">def_objective_vec_HardMixVAF</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/engineering2ordinary_strainV/">engineering2ordinary_strainV</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/FEA_plate_elliptic_holes/">FEA_plate_elliptic_holes</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/FEA_rate_dependent_plate_elliptic_holes/">FEA_rate_dependent_plate_elliptic_holes</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/get_CCFD_PlaneStressHardMixVAF/">get_CCFD_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/get_CCFD_VEVPHardMixLin/">get_CCFD_VEVPHardMixLin</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/get_df_PlaneStressHardMixVAF/">get_df_PlaneStressHardMixVAF</a>
                   </li>
@@ -78,9 +88,19 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/global_problem_PlaneStressHardMixVAF/">global_problem_PlaneStressHardMixVAF</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/identityV/">identityV</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/local_problem_PlaneStrain_VEVPHardMixLin/">local_problem_PlaneStrain_VEVPHardMixLin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/local_problem_PlaneStrain_VEVPHardMixLin_notan/">local_problem_PlaneStrain_VEVPHardMixLin_notan</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/local_problem_PlaneStressHardMixVAF/">local_problem_PlaneStressHardMixVAF</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/local_problem_PlaneStressHardMixVAF_notan/">local_problem_PlaneStressHardMixVAF_notan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/local_problem_VEVPHardMixLin/">local_problem_VEVPHardMixLin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/local_problem_VEVPHardMixLin_notan/">local_problem_VEVPHardMixLin_notan</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/mesh_info/">mesh_info</a>
                   </li>
@@ -90,6 +110,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/opt_input_HardMix/">opt_input_HardMix</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/ordinary2engineering_strainV/">ordinary2engineering_strainV</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
@@ -97,6 +119,12 @@
                   <li class="toctree-l1"><a class="reference internal" href="code/selection_HardMix/">selection_HardMix</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="code/selection_threshold/">selection_threshold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/V2dev/">V2dev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/V2eq/">V2eq</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="code/volumetric_deviatoric_splitV/">volumetric_deviatoric_splitV</a>
                   </li>
               </ul>
       </div>
@@ -122,8 +150,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>EUCLID (Efficient Unsupervised Constitutive Law Identification &amp; Discovery) is here applied to discover plastic yield functions of different materials.</p>
-<p><img alt="Schematic of EUCLID" src="img/schematics-plasticity.png" /></p>
+                <p>EUCLID (Efficient Unsupervised Constitutive Law Identification &amp; Discovery) is here applied to discover path-dependent material behavior, i.e., elastoplastic material models and generalized standard material models.</p>
+<h1 id="elastoplasticity">Elastoplasticity</h1>
+<p><img alt="Schematic of EUCLID for discovering elasto-plasticity" src="img/schematics-plasticity.png" /></p>
 <p>In a single experiment with complex geometry (a), point-wise displacements
 (b) and global reaction forces (i) are measured. A quadrilateral finite element mesh is constructed (c) to interpolate the
 displacement data. The resulting displacement field (d) is differentiated to arrive at the strain field (e). The material model
@@ -133,6 +162,13 @@ in the data set, while the history variables are updated at each step (g). Based
 works and hence the internal (h) and external (i) force imbalances are calculated, contributing to the cost function. Finally,
 the cost function is minimized jointly with a sparsity promoting regularization term (j) to generate a set of solutions out of
 which a solution with low cost and high parsimony is automatically selected.</p>
+<h1 id="generalized-standard-materials">Generalized standard materials</h1>
+<p><img alt="Schematic of EUCLID for discovering generalized standard materials" src="img/schematics-GSM.png" /></p>
+<p>From a mechanical test on a specimen with complex shape (a), the strain field over the specimen surface is acquired using digital image correlation (DIC) (b)
+, and the reaction force at the boundary is measured using a load cell.
+Introducing a model library, the residuals of the weak form of linear momentum balance in the interior (c) and at the boundary (d) can be expressed as functions of the material parameters <code>theta</code>.
+By minimizing the sum of squared residuals of the linear momentum balance along with a sparsity promoting regularization term (e),
+the thermodynamic potentials (f) are discovered as parsimonious mathematical formulae.</p>
 <h1 id="about-the-documentation">About the documentation</h1>
 <p>The <a href="https://EUCLID-code.github.io/EUCLID-plasticity/mkdocs/site" target="_blank">documentation</a> contains detailed information for the most important functions (subroutines).
 For each function, the <em>input arguments</em> and <em>output arguments</em> are provided.
@@ -143,7 +179,7 @@ The data used in the <a href="https://EUCLID-code.github.io/EUCLID-plasticity/mk
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="publication/" class="btn btn-neutral float-right" title="Publication">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="publication/" class="btn btn-neutral float-right" title="Publications">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -186,5 +222,5 @@ The data used in the <a href="https://EUCLID-code.github.io/EUCLID-plasticity/mk
 
 <!--
 MkDocs version : 1.3.0
-Build Date UTC : 2022-06-24 14:59:46.109132+00:00
+Build Date UTC : 2022-12-08 12:03:38.942006+00:00
 -->

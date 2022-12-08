@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://euclid-code.github.io/code/local_problem_PlaneStrain_VEVPHardMixLin/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>local_problem_PlaneStrain_VEVPHardMixLin - EUCLID / Plasticity</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "local_problem_PlaneStrain_VEVPHardMixLin";
+        var mkdocs_page_input_path = "code\\local_problem_PlaneStrain_VEVPHardMixLin.md";
+        var mkdocs_page_url = "/code/local_problem_PlaneStrain_VEVPHardMixLin/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> EUCLID / Plasticity
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../publication/">Publications</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../code_data/">Code/Data</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../example_plasticity_w_hardening/">Example 1</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../example_GSM/">Example 2</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Code</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../notation/">Notation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../def_objective_vec_HardMixVAF/">def_objective_vec_HardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../engineering2ordinary_strainV/">engineering2ordinary_strainV</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FEA_plate_elliptic_holes/">FEA_plate_elliptic_holes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FEA_rate_dependent_plate_elliptic_holes/">FEA_rate_dependent_plate_elliptic_holes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../get_CCFD_PlaneStressHardMixVAF/">get_CCFD_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../get_CCFD_VEVPHardMixLin/">get_CCFD_VEVPHardMixLin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../get_df_PlaneStressHardMixVAF/">get_df_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../get_df_PlaneStressHardMixVAF_FD/">get_df_PlaneStressHardMixVAF_FD</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../get_f_PlaneStressHardMixVAF/">get_f_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../global_problem_call/">global_problem_call</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../global_problem_PlaneStressHardMixVAF/">global_problem_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../identityV/">identityV</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">local_problem_PlaneStrain_VEVPHardMixLin</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#input-arguments">Input Arguments</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#output-arguments">Output Arguments</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../local_problem_PlaneStrain_VEVPHardMixLin_notan/">local_problem_PlaneStrain_VEVPHardMixLin_notan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../local_problem_PlaneStressHardMixVAF/">local_problem_PlaneStressHardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../local_problem_PlaneStressHardMixVAF_notan/">local_problem_PlaneStressHardMixVAF_notan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../local_problem_VEVPHardMixLin/">local_problem_VEVPHardMixLin</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../local_problem_VEVPHardMixLin_notan/">local_problem_VEVPHardMixLin_notan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mesh_info/">mesh_info</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../objective_vec_HardMixVAF/">objective_vec_HardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../opt_HardMix/">opt_HardMix</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../opt_input_HardMix/">opt_input_HardMix</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ordinary2engineering_strainV/">ordinary2engineering_strainV</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../selection_best_random_HardMixVAF/">selection_best_random_HardMixVAF</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../selection_HardMix/">selection_HardMix</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../selection_threshold/">selection_threshold</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../V2dev/">V2dev</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../V2eq/">V2eq</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../volumetric_deviatoric_splitV/">volumetric_deviatoric_splitV</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">EUCLID / Plasticity</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Code &raquo;</li><li>local_problem_PlaneStrain_VEVPHardMixLin</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="local_problem_planestrain_vevphardmixlin-solves-the-local-problem"><code>LOCAL_PROBLEM_PLANESTRAIN_VEVPHARDMIXLIN</code> - solves the local problem</h1>
+<h3 id="comments">Comments</h3>
+<p>This function solves the local problem, i.e., the
+viscoelastic-viscoplastic constitutive equations with mixed isotropic and
+kinematic hardening.</p>
+<p>Note:</p>
+<p><code>epsilon_vp = alpha_1 = alpha_3</code></p>
+<p><code>gamma = sqrt(3/2) * alpha_2</code></p>
+<h3 id="input-arguments">Input Arguments</h3>
+<p><code>Gi</code> (<em>double</em>) - viscoelastic material parameters</p>
+<p><code>gi</code> (<em>double</em>) - viscoelastic material parameters</p>
+<p><code>Ki</code> (<em>double</em>) - viscoelastic material parameters</p>
+<p><code>ki</code> (<em>double</em>) - viscoelastic material parameters</p>
+<p><code>Ginf</code> (<em>double</em>) - viscoelastic material parameter</p>
+<p><code>Kinf</code> (<em>double</em>) - viscoelastic material parameter</p>
+<p><code>H_iso</code> (<em>double</em>) - isotropic hardening parameter</p>
+<p><code>H_kin</code> (<em>double</em>) - kinematic hardening parameter</p>
+<p><code>eta</code> (<em>double</em>) - viscoplastic material parameter</p>
+<p><code>sigma_0</code> (<em>double</em>) - yield stress</p>
+<p><code>time_inc</code> (<em>double</em>) - time increment</p>
+<p><code>epsilonV_2DPlaneStrain</code> (<em>double</em>) - infinitesimal strain at the current
+load step in Voigt notation (epsilon_11, epsilon_22, 2*epsilon_12)</p>
+<p><code>alphaV_prev</code> (<em>double</em>) - viscoelastic internal variables at the
+previous load step</p>
+<p><code>epsilonVvp_prev</code> (<em>double</em>) - viscoplastic internal variables at the
+previous load step</p>
+<p><code>gamma_prev</code> (<em>double</em>) - plastic multiplier at the previous load step</p>
+<h3 id="output-arguments">Output Arguments</h3>
+<p><code>sigmaV</code> (<em>double</em>) - Cauchy stress at the current load step in Voigt
+notation (sigma_11, sigma_22, sigma_12)</p>
+<p><code>CC</code> (<em>double</em>) - consistent tangent modulus</p>
+<p><code>alphaV</code> (<em>double</em>) - viscoelastic internal variables at the
+current load step</p>
+<p><code>epsilonVvp</code> (<em>double</em>) - viscoplastic internal variables at the
+current load step</p>
+<p><code>gamma</code> (<em>double</em>) - plastic multiplier at the current load step</p>
+<p><code>viscoelastic</code> (<em>logical</em>) - indicates whether the load step was purely
+viscoelastic</p>
+<p><code>converged_local</code> (<em>logical</em>) - indicates whether the local problem
+converged</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../identityV/" class="btn btn-neutral float-left" title="identityV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../local_problem_PlaneStrain_VEVPHardMixLin_notan/" class="btn btn-neutral float-right" title="local_problem_PlaneStrain_VEVPHardMixLin_notan">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../identityV/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../local_problem_PlaneStrain_VEVPHardMixLin_notan/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

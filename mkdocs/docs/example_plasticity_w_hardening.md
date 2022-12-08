@@ -1,4 +1,4 @@
-# Example
+# Example 1 - Elastoplasticity
 It follows a step-by-step description of the implemented algorithm for an exemplary dataset.
 In particular, EUCLID (Efficient Unsupervised Constitutive Law Identification & Discovery) is applied to the displacement and net reaction force data
 that were generated based on the material model F1.

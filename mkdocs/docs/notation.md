@@ -15,6 +15,7 @@
 | HardIsoNonlin | nonlinear isotropic hardening |
 | HardKinLin | linear kinematic hardening |
 | HardMix | mixed isotropic and kinematic hardening |
+| HardMixLin | linear mixed isotropic and kinematic hardening |
 | notan | no elasto-plastic consistent tangent modulus computation |
 | NR | Newton-Raphson |
 | mex | MATLAB executable |
@@ -22,6 +23,7 @@
 | UT | uniaxial tension |
 | UTC | uniaxial tension followed by uniaxial compression |
 | VAF | Voce and Armstrong-Frederick hardening |
+| VEVP | viscoelastic-viscoplastic |
 
 ## Variables
 

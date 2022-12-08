@@ -2,127 +2,197 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://euclid-code.github.io/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code_data/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/contact/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/example_GSM/</loc>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/example_plasticity/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/example_plasticity_w_hardening/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/notation/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/publication/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/FEA_plate_elliptic_holes/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/FEA_rate_dependent_plate_elliptic_holes/</loc>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/V2dev/</loc>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/V2eq/</loc>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/def_objective_vec_HardMixVAF/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/engineering2ordinary_strainV/</loc>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/get_CCFD_PlaneStressHardMixVAF/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/get_CCFD_VEVPHardMixLin/</loc>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/get_df_PlaneStressHardMixVAF/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/get_df_PlaneStressHardMixVAF_FD/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/get_f_PlaneStressHardMixVAF/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/global_problem_PlaneStrain_VEVPHardMixLin/</loc>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/global_problem_PlaneStressHardMixVAF/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/global_problem_call/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/identityV/</loc>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/local_problem_PlaneStrain_VEVPHardMixLin/</loc>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/local_problem_PlaneStrain_VEVPHardMixLin_notan/</loc>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/local_problem_PlaneStressHardMixVAF/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/local_problem_PlaneStressHardMixVAF_notan/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/local_problem_VEVPHardMixLin/</loc>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/local_problem_VEVPHardMixLin_notan/</loc>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/mesh_info/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/objective_vec_HardMixVAF/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/opt_HardMix/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/opt_input_HardMix/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/ordinary2engineering_strainV/</loc>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/selection_HardMix/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/selection_Lp_threshold/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/selection_best_random_HardMixVAF/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://euclid-code.github.io/code/selection_threshold/</loc>
-         <lastmod>2022-06-24</lastmod>
+         <lastmod>2022-12-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://euclid-code.github.io/code/volumetric_deviatoric_splitV/</loc>
+         <lastmod>2022-12-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

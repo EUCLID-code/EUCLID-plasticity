@@ -2,27 +2,40 @@ site_name: EUCLID / Plasticity
 site_url: https://euclid-code.github.io/
 nav:
     - Home: index.md
-    - Publication: publication.md
+    - Publications: publication.md
     - Code/Data: code_data.md
-    - Example: example_plasticity_w_hardening.md
+    - Example 1: example_plasticity_w_hardening.md
+    - Example 2: example_GSM.md
     - Code:
         - Notation: notation.md
         - def_objective_vec_HardMixVAF: code/def_objective_vec_HardMixVAF.md
+        - engineering2ordinary_strainV: code/engineering2ordinary_strainV.md
         - FEA_plate_elliptic_holes: code/FEA_plate_elliptic_holes.md
+        - FEA_rate_dependent_plate_elliptic_holes: code/FEA_rate_dependent_plate_elliptic_holes.md
         - get_CCFD_PlaneStressHardMixVAF: code/get_CCFD_PlaneStressHardMixVAF.md
+        - get_CCFD_VEVPHardMixLin: code/get_CCFD_VEVPHardMixLin.md
         - get_df_PlaneStressHardMixVAF: code/get_df_PlaneStressHardMixVAF.md
         - get_df_PlaneStressHardMixVAF_FD: code/get_df_PlaneStressHardMixVAF_FD.md
         - get_f_PlaneStressHardMixVAF: code/get_f_PlaneStressHardMixVAF.md
         - global_problem_call: code/global_problem_call.md
         - global_problem_PlaneStressHardMixVAF: code/global_problem_PlaneStressHardMixVAF.md
+        - identityV: code/identityV.md
+        - local_problem_PlaneStrain_VEVPHardMixLin: code/local_problem_PlaneStrain_VEVPHardMixLin.md
+        - local_problem_PlaneStrain_VEVPHardMixLin_notan: code/local_problem_PlaneStrain_VEVPHardMixLin_notan.md
         - local_problem_PlaneStressHardMixVAF: code/local_problem_PlaneStressHardMixVAF.md
         - local_problem_PlaneStressHardMixVAF_notan: code/local_problem_PlaneStressHardMixVAF_notan.md
+        - local_problem_VEVPHardMixLin: code/local_problem_VEVPHardMixLin.md
+        - local_problem_VEVPHardMixLin_notan: code/local_problem_VEVPHardMixLin_notan.md
         - mesh_info: code/mesh_info.md
         - objective_vec_HardMixVAF: code/objective_vec_HardMixVAF.md
         - opt_HardMix: code/opt_HardMix.md
         - opt_input_HardMix: code/opt_input_HardMix.md
+        - ordinary2engineering_strainV: code/ordinary2engineering_strainV.md
         - selection_best_random_HardMixVAF: code/selection_best_random_HardMixVAF.md
         - selection_best_random_HardMixVAF: code/selection_best_random_HardMixVAF.md
         - selection_HardMix: code/selection_HardMix.md
         - selection_threshold: code/selection_threshold.md
+        - V2dev: code/V2dev.md
+        - V2eq: code/V2eq.md
+        - volumetric_deviatoric_splitV: code/volumetric_deviatoric_splitV.md
 theme: readthedocs
