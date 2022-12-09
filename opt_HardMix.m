@@ -1,6 +1,13 @@
 function opt_HardMix()
 % opt_HardMix runs the optimization problem
 %
+%    ________ ___  ___ _______ ___     ___ ______
+%   /  _____//  / /  //  ____//  /    /  //  _   \
+%  /  _____//  /_/  //  /___ /  /___ /  //  /_|  |
+% /_______//_______//______//______//__//_______/
+% Efficient Unsupervised Constitutive Law Identification and Discovery
+% https://euclid-code.github.io/
+%
 % ## Comments
 %
 % Please make sure that the correct input is defined in
