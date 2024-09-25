@@ -24,12 +24,13 @@ Introducing a model library, the residuals of the weak form of linear momentum b
 By minimizing the sum of squared residuals of the linear momentum balance along with a sparsity promoting regularization term (e),
 the thermodynamic potentials (f) are discovered as parsimonious mathematical formulae.
 
-Corrigendum:
+### Corrigendum
+
 Please note a slight misuse of notation in the paper.
-Both the short-term moduli (G0, K0 in the code) and long-term moduli (Ginf, Kinf in the code) are denoted as G, K in the paper.
-In Eq. (13), Eq. (17), and in all equations in the appendix, the long-term moduli are considered, i.e., G, K correspond to Ginf, Kinf.
-In Eq. (25) and Table 2, the short-term moduli are considered, i.e., G, K correspond to G0, K0.
-It is G0 = Ginf + sum(Gi) and K0 = Kinf + sum(Ki).
+Both the short-term moduli (`G0`, `K0` in the code) and long-term moduli (`Ginf`, `Kinf` in the code) are denoted as `G`, `K` in the paper.
+In Eq. (13), Eq. (17), and in all equations in the appendix, the long-term moduli are considered, i.e., `G`, `K` correspond to `Ginf`, `Kinf`.
+In Eq. (25) and Table 2, the short-term moduli are considered, i.e., `G`, `K` correspond to `G0`, `K0`.
+It is `G0 = Ginf + sum(Gi)` and `K0 = Kinf + sum(Ki)`.
 
 # About the documentation
 The <a href="https://EUCLID-code.github.io/EUCLID-plasticity/mkdocs/site" target="_blank">documentation</a> contains detailed information for the most important functions (subroutines).
