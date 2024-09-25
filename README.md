@@ -29,3 +29,19 @@ The <a href="https://EUCLID-code.github.io/EUCLID-plasticity/mkdocs/site" target
 For each function, the _input arguments_ and _output arguments_ are provided.
 The documentation can be browsed by using the search box.
 The provided _examples_ help to understand the workflow of EUCLID, they can be executed using the provided <a href="https://euclid-code.github.io/EUCLID-plasticity/mkdocs/site/code_data/" target="_blank">codes and data</a>.
+
+# Corrigendum
+
+25.09.2024:
+Please note a slight misuse of notation in the paper.
+Both the short-term moduli (G0, K0 in the code) and long-term moduli (Ginf, Kinf in the code) are denoted as G, K in the paper.
+In Eq. (13), Eq. (17), and in all equations in the appendix, the long-term moduli are considered, i.e., G, K correspond to Ginf, Kinf.
+In Eq. (25) and Table 2, the short-term moduli are considered, i.e., G, K correspond to G0, K0.
+It is G0 = Ginf + sum(Gi) and K0 = Kinf + sum(Ki).
+
+
+
+
+
+
+
